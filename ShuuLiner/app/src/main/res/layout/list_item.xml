@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--ドット-->
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="・" />
+
+    <!--本文-->
+    <EditText
+        android:id="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="でふぉ" />
+
+    <!--展開/折り畳みフラグ-->
+    <TextView
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-" />
+
+</LinearLayout>

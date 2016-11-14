@@ -1,10 +1,11 @@
-package com.application.hakuna.shuuliner;
+package com.application.hakuna.shuuliner.ui.activity;
 
+import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-import com.application.hakuna.shuuliner.ui.fragment.PartsFragment;
+import com.application.hakuna.shuuliner.R;
+import com.application.hakuna.shuuliner.ui.fragment.TreeListFragment;
 
 public class InitActivity extends AppCompatActivity {
 
@@ -13,8 +14,8 @@ public class InitActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_init);
 
-        //fragmentの生成
-        PartsFragment fragment = new PartsFragment();
+        // 階層リストを作成するfragmentの生成
+        TreeListFragment fragment = new TreeListFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.container, fragment);
         transaction.commit();
